@@ -1,0 +1,9 @@
+# Serp-extractor
+Extracts organic google results from user's keyword using SerpAPI
+
+To build, use
+`docker compose up --build -d`
+
+Run unit tests with command
+`npm run`
+
