@@ -1,0 +1,28 @@
+{
+  "name": "serp-extractor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "node --test",
+    "start": "node public/search.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lubomirex/test2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/lubomirex/test2/issues"
+  },
+  "homepage": "https://github.com/lubomirex/test2#readme",
+  "dependencies": {
+    "dotenv": "^18.0.10",
+    "express": "^5.3.0",
+    "serpapi": "^2.2.1"
+  }
+
+}

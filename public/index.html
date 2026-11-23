@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Search</title>
+    <title>serp-extractor</title>
+    <script src="script.js" defer></script>
 
     <style>
         body {
@@ -39,16 +40,18 @@
 
 
 
-    <form action="https://www.google.com/search" method="GET">
-        <input
-            type="text"
-            name="q"
-            placeholder="Search Google..."
-            autocomplete="off"
-            autofocus
-            required
-        >
-    </form>
+  <form id="searchForm">
+    <input 
+    type="text" 
+    id="searchInput" 
+    placeholder="Enter your search query..." 
+    required>
+
+    <button type="submit">Search</button>
+    <button id="downloadButton" type="button" disabled>Download Results</button>
+  </form>
+
+  <div id="results"></div>
 
 
 </body>
