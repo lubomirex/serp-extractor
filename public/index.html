@@ -4,36 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
     <title>serp-extractor</title>
     <script src="script.js" defer></script>
-
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background: #121212;
-            font-family: Arial, sans-serif;
-        }
-
-        input {
-            width: 400px;
-            max-width: 80vw;
-            padding: 15px 20px;
-            border: 1px solid #444;
-            border-radius: 12px;
-            background: #222;
-            color: white;
-            font-size: 18px;
-            outline: none;
-        }
-
-        input:focus {
-            border-color: #4285f4;
-        }
-    </style>
 </head>
 
 <body>
@@ -48,7 +21,7 @@
     required>
 
     <button type="submit">Search</button>
-    <button id="downloadButton" type="button" disabled>Download Results</button>
+    <button id="downloadButton" type="button" disabled>Download</button>
   </form>
 
   <div id="results"></div>

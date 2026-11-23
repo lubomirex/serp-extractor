@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #f3f4f6;
+    min-height: 100vh;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    color: #f9fafb;
+    margin-bottom: 30px;
+}
+
+/* Search form */
+
+#searchForm {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: min(100%, 850px);
+}
+
+#searchInput {
+    flex: 1;
+    min-width: 0;
+    padding: 14px;
+    font-size: 16px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    background-color: #222;
+    color: #fff;
+    outline: none;
+}
+
+#searchInput:focus {
+    border-color: #4285f4;
+    box-shadow: 0 0 0 3px #4285f440;
+}
+
+/* Buttons */
+
+button {
+    padding: 12px 20px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+#downloadButton {
+    display: block;
+    margin-left: auto;
+    margin-bottom: 20px;
+    background-color: #16a34a;
+}
+
+#downloadButton:hover {
+    background-color: #15803d;
+}
+
+button:disabled,
+#downloadButton:disabled {
+    background-color: #9ca3af;
+    cursor: not-allowed;
+}
+
+/* Search results */
+
+#results {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: min(100%, 850px);
+}
+
+#results > div {
+    background-color: #222;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px #00000040;
+}
+
+#results h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+
+#results a {
+    color: #2563eb;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
+
+#results a:hover {
+    text-decoration: underline;
+}
+
+#results p {
+    margin: 0;
+    color: #d1d5db;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+/* Mobile devices */
+
+@media (max-width: 480px) {
+    body {
+        padding: 20px 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    #searchForm {
+        flex-direction: column;
+    }
+
+    #searchForm button {
+        width: 100%;
+    }
+
+    #downloadButton {
+        width: 100%;
+    }
+}
