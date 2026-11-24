@@ -7,3 +7,5 @@ To build, use
 Run unit tests with command
 `npm run`
 
+Container will be located at
+`localhost:3000`
